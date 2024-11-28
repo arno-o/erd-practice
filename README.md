@@ -1,3 +1,8 @@
+Start the project using the following block in your console:
+`
+npm run dev
+`
+
 # Online Art Marketplace System
 Develop a system for an online marketplace selling artwork.
 
