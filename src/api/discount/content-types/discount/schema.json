@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounts",
+  "info": {
+    "singularName": "discount",
+    "pluralName": "discounts",
+    "displayName": "Discount"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "discount"
+    },
+    "amount": {
+      "type": "decimal",
+      "min": 0,
+      "max": 1,
+      "default": 0
+    }
+  }
+}
